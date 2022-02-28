@@ -1,0 +1,61 @@
+/* Homepage 1*/
+.ratings-card {
+  padding: 30px 20px;
+  text-align: center;
+  .m-img {
+    width: 160px;
+  }
+}
+
+// premium-networks
+.premium-networks {
+  padding: 50px 0;
+}
+.section-title {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    background-color: $primary-color;
+    height: 2px;
+    width: 44px;
+    display: block;
+  }
+}
+
+// filter-menu
+.filter-menu {
+  background: $primary-lite-color;
+  padding: 10px 40px;
+}
+.filter-title {
+  font-family: $heading-font;
+  font-weight: 700;
+}
+
+.mp_select {
+  height: 34px;
+  margin-right: 50px;
+  .current {
+    line-height: 2;
+    color: $primary-color;
+    font-size: 16px;
+    font-weight: 900;
+  }
+
+  &::after {
+    border-bottom: 2px solid $primary-color;
+    border-right: 2px solid $primary-color;
+  }
+}
+.mp_select.primary-bg {
+  &::after {
+    border-bottom: 2px solid $white-color;
+    border-right: 2px solid $white-color;
+  }
+  .current {
+    color: $white-color;
+  }
+}
