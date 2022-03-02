@@ -54,14 +54,17 @@
   align-items: center;
   border-radius: 5px;
   .input {
-    padding: 4px 15px;
+    padding: 10px 40px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border: none;
+    @include desktop {
+      padding: 10px 3px;
+    }
   }
   .subs-btn {
     border: 1px solid $primary-color;
-    padding: 3px 17px;
+    padding: 9px 17px;
     background: $primary-color;
     color: #fff;
     border-top-right-radius: 5px;

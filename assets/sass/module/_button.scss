@@ -4,7 +4,7 @@
   font-weight: 800;
   z-index: 0;
   font-size: 14px;
-  padding: 10px 14px;
+  padding: 5px 20px;
   text-transform: capitalize;
   transition: $transition;
   display: inline-block;
@@ -30,23 +30,10 @@
     transition: $transition;
   }
 
-  @include large-mobile {
-    padding: 8px 20px;
-  }
-
-  @include desktop {
-    padding: 8px 15px;
-  }
-
-  @include screen-1200 {
-    padding: 10px 20px;
-  }
-
   &:hover {
     &::before {
       top: -100%;
     }
-
     border: 2px solid $primary-color;
     color: $primary-color;
   }
@@ -56,7 +43,7 @@
   font-weight: 800;
   z-index: 0;
   font-size: 14px;
-  padding: 10px 14px;
+  padding: 5px 20px;
   text-transform: capitalize;
   transition: $transition;
   display: inline-block;
@@ -80,18 +67,6 @@
     background: $primary-lite-color;
     z-index: -1;
     transition: $transition;
-  }
-
-  @include large-mobile {
-    padding: 8px 20px;
-  }
-
-  @include desktop {
-    padding: 8px 15px;
-  }
-
-  @include screen-1200 {
-    padding: 10px 20px;
   }
 
   &:hover {
