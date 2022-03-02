@@ -345,6 +345,7 @@ a {
     align-items: center;
     position: relative;
     transition: 0.7s;
+    flex-wrap: wrap;
     .img {
       width: 40px;
     }
@@ -364,6 +365,15 @@ a {
       border-radius: 3px;
       font-weight: 800;
     }
+    .btn1 {
+      @include screen-1200 {
+        margin-top: 10px;
+      }
+
+      @include tablet {
+        margin-top: 0;
+      }
+    }
   }
 
   .fea-wrapper {
@@ -377,9 +387,16 @@ a {
   .single-review {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     .user-img {
       width: 40px;
       margin-right: 20px;
+      @include screen-1200 {
+        margin-bottom: 10px;
+      }
+      @include tablet {
+        margin-bottom: 0;
+      }
     }
     .title {
       font-size: 12px;
@@ -398,8 +415,47 @@ a {
       font-weight: 300;
     }
   }
+  .ratings-wrapper {
+    width: initial;
+  }
+
+  .extra-small {
+    text-align: left;
+  }
 }
 
 // toprate networks
 .top-rate-networks {
+  .sl {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 4px;
+    background-color: #c6cee1;
+    color: #fff;
+    font-weight: 800;
+    font-size: 14px;
+    text-align: center;
+    margin-right: 15px;
+    &.active {
+      background-color: #3490dc;
+    }
+  }
+  .list {
+    font-weight: 800;
+    text-transform: capitalize;
+    font-size: 14px;
+  }
+  .total {
+    font-weight: 500;
+    font-size: 15px;
+    color: #c6cee1;
+    margin-left: 20px;
+  }
+  .rating {
+    color: $oranage-color;
+    font-weight: 500;
+    align-self: flex-end;
+    margin-left: 30px;
+  }
 }
