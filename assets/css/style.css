@@ -463,7 +463,8 @@ a {
   margin-top: -0.75rem;
   text-align: center;
   font-size: 1.5rem;
-  color: #777; }
+  color: #45b9f2;
+  font-weight: 700; }
 
 .progress--pie:before {
   display: none;
@@ -1591,6 +1592,9 @@ a .title {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; } }
+  @media (min-width: 1439px) {
+    .mp_single-card {
+      padding-right: 120px; } }
   .mp_single-card .separator {
     -webkit-transform: rotateZ(87deg);
     -ms-transform: rotate(87deg);

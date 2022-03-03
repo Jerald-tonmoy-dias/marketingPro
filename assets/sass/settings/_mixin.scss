@@ -35,6 +35,13 @@
   }
 }
 
+// larger than
+
+@mixin larger-1440() {
+  @media (min-width: 1439px) {
+    @content;
+  }
+}
 // @mixin tablet() {
 //   @media (min-width: 768px) and (max-width: 991.98px) {
 //     @content;

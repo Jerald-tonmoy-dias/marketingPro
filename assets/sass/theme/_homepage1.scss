@@ -119,6 +119,9 @@ a {
     justify-content: center;
     align-items: center;
   }
+  @include larger-1440 {
+    padding-right: 120px;
+  }
   // separator
   .separator {
     transform: rotateZ(87deg);
