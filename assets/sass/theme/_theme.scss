@@ -794,3 +794,10 @@
   font-size: 10px;
   font-weight: 500;
 }
+
+.custom-pagination {
+  .page-link {
+    color: $primary-color;
+    font-weight: 800;
+  }
+}

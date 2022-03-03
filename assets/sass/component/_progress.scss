@@ -23,6 +23,10 @@ $textShadow: rgba(black, 0.35) 1px 1px 1px;
   height: 120px;
   border-radius: 50%;
   background-color: $backColor;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   &:before {
     content: "";
     position: absolute;
@@ -115,6 +119,7 @@ $half: round($loops / 2);
     align-items: center;
     width: 100%;
     line-height: 2;
+    justify-content: center;
   }
   span {
     display: block;
@@ -125,6 +130,12 @@ $half: round($loops / 2);
     align-items: center;
     color: #bac4ce;
     font-size: 14px;
+    @include tablet {
+      width: 60%;
+    }
+    @include large-mobile {
+      width: 70%;
+    }
     .color-one {
       display: block;
       width: 10px;
