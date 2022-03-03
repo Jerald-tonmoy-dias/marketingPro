@@ -610,6 +610,14 @@ a {
     margin-right: 10px;
     border-radius: 2px;
     background-color: #45b9f2; }
+  .progress-review-content .rating-title .color-two {
+    background-color: #3490dc; }
+  .progress-review-content .rating-title .color-three {
+    background-color: #2779bd; }
+  .progress-review-content .rating-title .color-four {
+    background-color: #1c3d5a; }
+  .progress-review-content .rating-title .color-five {
+    background-color: #12283a; }
 
 .progress-review-content .rating-number {
   font-size: 14px; }
