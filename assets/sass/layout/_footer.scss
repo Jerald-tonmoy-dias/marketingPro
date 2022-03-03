@@ -10,6 +10,9 @@
   padding-top: 130px;
   padding-bottom: 70px;
   background-color: $secondary-color;
+  @include large-mobile {
+    padding-top: 100px;
+  }
   .footer-title {
     color: $white-color;
   }

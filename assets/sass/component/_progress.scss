@@ -86,7 +86,7 @@ $half: round($loops / 2);
         ),
         linear-gradient(
           $nextDeg,
-          $primary-color 50%,
+          $secondary-color 50%,
           $backColor 50%,
           $backColor
         );
@@ -94,11 +94,55 @@ $half: round($loops / 2);
       $nextDeg: -90deg + ($increment * ($i - $half));
       background-image: linear-gradient(
           $nextDeg,
-          $primary-color 50%,
+          $secondary-color 50%,
           transparent 50%,
           transparent
         ),
         linear-gradient(270deg, $primary-color 50%, $backColor 50%, $backColor);
     }
+  }
+}
+
+// progress-review-content
+.progress-review-content {
+  &.progress-review-content2 {
+    .rating-title {
+      width: 50%;
+    }
+  }
+  li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    line-height: 2;
+  }
+  span {
+    display: block;
+  }
+  .rating-title {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    color: #bac4ce;
+    font-size: 14px;
+    .color-one {
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+      border-radius: 2px;
+      background-color: $primary-color;
+    }
+  }
+  .rating-number {
+    font-size: 14px;
+  }
+  .tooltip-container {
+    display: block;
+    width: 70px;
+    border-radius: 5px;
+    height: 5px;
+    background: $primary-color;
+    cursor: pointer;
   }
 }

@@ -32,6 +32,12 @@
   .bottom-card-info li {
     line-height: 2.7;
   }
+
+  .single-page-card-info {
+    li {
+      margin-right: 10px;
+    }
+  }
 }
 
 .add-publisher {
@@ -104,6 +110,7 @@
     font-weight: 800;
     padding: 0 5px;
     border-radius: 2px;
+    font-size: 8px;
   }
 }
 
@@ -137,6 +144,9 @@
 
 .reviews-big-content {
   position: relative;
+  @include large-mobile {
+    flex-wrap: wrap;
+  }
   .date-float {
     position: absolute;
     right: 50px;
@@ -186,4 +196,10 @@
       margin-bottom: 30px;
     }
   }
+}
+
+// single-targeting-optimize
+.single-publish-card.single-targeting-optimize {
+  padding-left: 40px;
+  padding-right: 40px;
 }

@@ -77,6 +77,9 @@ a {
     max-width: initial;
   }
   .list {
+    background-color: $secondary-color;
+    border: 1px solid $primary-color;
+    color: $primary-color;
     @include large-mobile {
       width: 100%;
     }
@@ -119,7 +122,7 @@ a {
   // separator
   .separator {
     transform: rotateZ(87deg);
-    font-size: 22px;
+    font-size: 17px;
     margin-top: 3px;
     color: #e4e4e5;
     margin-right: -14px;
@@ -168,8 +171,8 @@ a {
       text-transform: capitalize;
     }
     .separator {
-      margin-top: -10px;
-      font-size: 24px;
+      margin-top: -3px;
+      font-size: 17px;
     }
   }
 
@@ -181,13 +184,14 @@ a {
   }
 
   .ratings-number {
-    border: 2px solid $oranage-color;
+    border: 1px solid $oranage-color;
     color: $oranage-color;
     display: inline-block;
     padding: 0 5px;
     border-radius: 5px;
-    font-weight: 800;
-    font-weight: 14px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: capitalize;
     @include large-mobile {
       margin-right: 10px;
     }
@@ -223,8 +227,9 @@ a {
     font-size: 14px;
     color: $secondary-color;
     transition: 0.3s;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    text-transform: capitalize;
+    // margin-right: 10px;
+    // margin-bottom: 10px;
     &:hover {
       color: $primary-color;
     }
@@ -318,6 +323,8 @@ a {
     padding: 5px;
     text-align: center;
     width: 100%;
+    font-size: 14px;
+    text-transform: capitalize;
   }
   .sign-up {
     width: 100%;
@@ -346,6 +353,9 @@ a {
     position: relative;
     transition: 0.7s;
     flex-wrap: wrap;
+    li {
+      line-height: 1;
+    }
     .img {
       width: 40px;
     }
@@ -360,12 +370,13 @@ a {
     .rating-amnt {
       font-size: 12px;
       color: $oranage-color;
-      border: 2px solid $oranage-color;
+      border: 1px solid $oranage-color;
       padding: 0 5px;
       border-radius: 3px;
       font-weight: 800;
     }
     .btn1 {
+      padding: 5px 20px;
       @include screen-1200 {
         margin-top: 10px;
       }
@@ -387,7 +398,7 @@ a {
   .single-review {
     display: flex;
     align-items: flex-start;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     .user-img {
       width: 40px;
       margin-right: 20px;
@@ -445,6 +456,12 @@ a {
     font-weight: 800;
     text-transform: capitalize;
     font-size: 14px;
+    color: $secondary-color;
+  }
+  a.list {
+    &:hover {
+      color: $primary-color;
+    }
   }
   .total {
     font-weight: 500;
