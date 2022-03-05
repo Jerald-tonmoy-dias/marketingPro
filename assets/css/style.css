@@ -630,6 +630,69 @@ a {
   background: #45b9f2;
   cursor: pointer; }
 
+.progress-bar {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background: transparent; }
+
+.progress-bar .background {
+  background: #022962; }
+
+.progress-bar div {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%; }
+
+.progress-bar div span {
+  position: absolute;
+  font-family: Arial;
+  font-size: 25px;
+  line-height: 85px;
+  height: 85px;
+  width: 86px;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: white; }
+
+.progress-bar .background {
+  background-color: #b3cef6; }
+
+.progress-bar .rotate {
+  clip: rect(0 50px 100px 0);
+  background-color: #45b9f2; }
+
+.progress-bar .left {
+  clip: rect(0 50px 100px 0);
+  opacity: 1;
+  background-color: #45b9f2; }
+
+.progress-bar .right {
+  clip: rect(0 50px 100px 0);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  opacity: 0;
+  background-color: #45b9f2; }
+
+@-webkit-keyframes toggle {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes toggle {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 /* Preloader */
 .preloader-inner {
   position: fixed;
@@ -1489,6 +1552,12 @@ a {
 .custom-pagination .page-link {
   color: #45b9f2;
   font-weight: 800; }
+
+.z-index-1 {
+  z-index: 1000; }
+
+.fw-700 {
+  font-weight: 700; }
 
 /* Homepage 1*/
 .ratings-card {

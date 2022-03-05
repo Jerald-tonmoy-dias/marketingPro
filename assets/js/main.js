@@ -23,6 +23,8 @@
             autoplaySpeed: 5000
         });
 
+        // prograss bar
+        $(".progress-bar").loading();
 
 
         // var options = {

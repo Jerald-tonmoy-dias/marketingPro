@@ -13,6 +13,7 @@
     <!-- Favicon Icon -->
     <link rel="shortcut icon" href="favicon.png">
 
+
     <!-- CSS Files -->
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -20,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css" />
     <link rel="stylesheet" href="assets/css/slick.css" />
     <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/jQuery-plugin-progressbar.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
@@ -277,10 +279,12 @@
                         <div class="ratings-card global-card h-100">
                             <img class="m-img mx-auto" src="./assets/images/theme1.png" alt="">
 
-
-                            <div class="progress--circle progress--4.50">
-                                <div class="progress__number">4.55</div>
+                            <!-- plugin -->
+                            <div class="progress-bar mx-auto mt-20 mb-20" data-percent="90" data-duration="1000"
+                                data-color="#022962">
+                                <span class="primary-color z-index-1 fw-700">4.55</span>
                             </div>
+
                             <h6>11 reviews
                                 / <span class="primary-color">4.55</span>
                             </h6>
@@ -1668,33 +1672,11 @@
     <script src="assets/js/vendor/waypoints.min.js"></script>
     <script src="assets/js/vendor/easing.min.js"></script>
     <script src="assets/js/vendor/jquery-ui.js"></script>
-    <script src="assets/js/vendor/wow.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="assets/js/vendor/wow.min.js"></script>
     <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
+    <script src="assets/js/vendor/jQuery-plugin-progressbar.js"></script>
     <script src="assets/js/main.js"></script>
-
-    <script>
-        // var options = {
-        //     series: [100],
-        //     chart: {
-        //         type: 'donut',
-        //     },
-        //     responsive: [{
-        //         breakpoint: 480,
-        //         options: {
-        //             chart: {
-        //                 width: 200
-        //             },
-        //             legend: {
-        //                 position: 'bottom'
-        //             }
-        //         }
-        //     }]
-        // };
-
-        // var chart = new ApexCharts(document.querySelector("#chart-ratings"), options);
-        // chart.render();
-    </script>
 </body>
 
 </html>

@@ -170,3 +170,67 @@ $half: round($loops / 2);
     cursor: pointer;
   }
 }
+
+// from plugins
+.progress-bar {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background: transparent;
+}
+.progress-bar .background {
+  background: $secondary-color;
+}
+
+.progress-bar div {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.progress-bar div span {
+  position: absolute;
+  font-family: Arial;
+  font-size: 25px;
+  line-height: 85px;
+  height: 85px;
+  width: 86px;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.progress-bar .background {
+  background-color: #b3cef6;
+}
+
+.progress-bar .rotate {
+  clip: rect(0 50px 100px 0);
+  background-color: $primary-color;
+}
+
+.progress-bar .left {
+  clip: rect(0 50px 100px 0);
+  opacity: 1;
+  background-color: $primary-color;
+}
+
+.progress-bar .right {
+  clip: rect(0 50px 100px 0);
+  transform: rotate(180deg);
+  opacity: 0;
+  background-color: $primary-color;
+}
+
+@keyframes toggle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
