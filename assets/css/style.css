@@ -1518,7 +1518,8 @@ a .title {
   position: relative; }
   @media (max-width: 767.98px) {
     .section-title {
-      margin-bottom: 30px; } }
+      margin-bottom: 30px;
+      text-align: left; } }
   .section-title::after {
     content: "";
     position: absolute;

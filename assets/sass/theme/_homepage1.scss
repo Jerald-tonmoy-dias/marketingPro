@@ -34,6 +34,7 @@ a {
   position: relative;
   @include large-mobile {
     margin-bottom: 30px;
+    text-align: left;
   }
   &::after {
     content: "";
