@@ -411,163 +411,6 @@ a {
       -ms-flex-pack: center;
       justify-content: center; } }
 
-/* Progress Bars */
-.progress--bar {
-  height: 1.5rem;
-  margin: 20px;
-  background-color: #ddd; }
-  .progress--bar:after {
-    content: "";
-    display: block;
-    height: 100%;
-    background-color: #45b9f2; }
-
-.progress--circle {
-  position: relative;
-  display: inline-block;
-  margin: 20px;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background-color: #ddd;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto; }
-  .progress--circle:before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    background-color: white; }
-  .progress--circle:after {
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #45b9f2; }
-
-.progress__number {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  line-height: 1;
-  margin-top: -0.75rem;
-  text-align: center;
-  font-size: 1.5rem;
-  color: #45b9f2;
-  font-weight: 700; }
-
-.progress--pie:before {
-  display: none;
-  /* Get rid of white circle for "pie chart style" meter */ }
-
-.progress--pie .progress__number {
-  color: white;
-  text-shadow: rgba(0, 0, 0, 0.35) 1px 1px 1px; }
-
-/**
-* $step is set to 5 by default, meaning you can only use percentage classes in increments of five (e.g. 25, 30, 45, 50, and so on). This helps to reduce the size of the final CSS file. If you need a number that doesn't end in 0 or 5, you can change the text percentage while rounding the class up/down to the nearest 5.
-*/
-.progress--bar.progress--0:after {
-  width: 0%; }
-
-.progress--circle.progress--0:after {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #ddd), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, left top, right top, color-stop(50%, #022962), color-stop(50%, #ddd), to(#ddd));
-  background-image: -webkit-linear-gradient(left, #ddd 50%, transparent 50%, transparent), -webkit-linear-gradient(left, #022962 50%, #ddd 50%, #ddd);
-  background-image: -o-linear-gradient(left, #ddd 50%, transparent 50%, transparent), -o-linear-gradient(left, #022962 50%, #ddd 50%, #ddd);
-  background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(90deg, #022962 50%, #ddd 50%, #ddd); }
-
-.progress--bar.progress--0.5:after {
-  width: 0.5%; }
-
-.progress--circle.progress--0.5:after {
-  background-image: -webkit-linear-gradient(left, #ddd 50%, transparent 50%, transparent), -webkit-linear-gradient(324deg, #022962 50%, #ddd 50%, #ddd);
-  background-image: -o-linear-gradient(left, #ddd 50%, transparent 50%, transparent), -o-linear-gradient(324deg, #022962 50%, #ddd 50%, #ddd);
-  background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(126deg, #022962 50%, #ddd 50%, #ddd); }
-
-.progress--bar.progress--1:after {
-  width: 1%; }
-
-.progress--circle.progress--1:after {
-  background-image: -webkit-linear-gradient(left, #ddd 50%, transparent 50%, transparent), -webkit-linear-gradient(288deg, #022962 50%, #ddd 50%, #ddd);
-  background-image: -o-linear-gradient(left, #ddd 50%, transparent 50%, transparent), -o-linear-gradient(288deg, #022962 50%, #ddd 50%, #ddd);
-  background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(162deg, #022962 50%, #ddd 50%, #ddd); }
-
-.progress--bar.progress--1.5:after {
-  width: 1.5%; }
-
-.progress--circle.progress--1.5:after {
-  background-image: -webkit-linear-gradient(left, #ddd 50%, transparent 50%, transparent), -webkit-linear-gradient(252deg, #022962 50%, #ddd 50%, #ddd);
-  background-image: -o-linear-gradient(left, #ddd 50%, transparent 50%, transparent), -o-linear-gradient(252deg, #022962 50%, #ddd 50%, #ddd);
-  background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(198deg, #022962 50%, #ddd 50%, #ddd); }
-
-.progress--bar.progress--2:after {
-  width: 2%; }
-
-.progress--circle.progress--2:after {
-  background-image: -webkit-linear-gradient(left, #ddd 50%, transparent 50%, transparent), -webkit-linear-gradient(216deg, #022962 50%, #ddd 50%, #ddd);
-  background-image: -o-linear-gradient(left, #ddd 50%, transparent 50%, transparent), -o-linear-gradient(216deg, #022962 50%, #ddd 50%, #ddd);
-  background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(234deg, #022962 50%, #ddd 50%, #ddd); }
-
-.progress--bar.progress--2.5:after {
-  width: 2.5%; }
-
-.progress--circle.progress--2.5:after {
-  background-image: -webkit-gradient(linear, right top, left top, color-stop(50%, #022962), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #45b9f2), color-stop(50%, #ddd), to(#ddd));
-  background-image: -webkit-linear-gradient(right, #022962 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #45b9f2 50%, #ddd 50%, #ddd);
-  background-image: -o-linear-gradient(right, #022962 50%, transparent 50%, transparent), -o-linear-gradient(right, #45b9f2 50%, #ddd 50%, #ddd);
-  background-image: linear-gradient(-90deg, #022962 50%, transparent 50%, transparent), linear-gradient(270deg, #45b9f2 50%, #ddd 50%, #ddd); }
-
-.progress--bar.progress--3:after {
-  width: 3%; }
-
-.progress--circle.progress--3:after {
-  background-image: -webkit-linear-gradient(144deg, #022962 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #45b9f2 50%, #ddd 50%, #ddd);
-  background-image: -o-linear-gradient(144deg, #022962 50%, transparent 50%, transparent), -o-linear-gradient(right, #45b9f2 50%, #ddd 50%, #ddd);
-  background-image: linear-gradient(-54deg, #022962 50%, transparent 50%, transparent), linear-gradient(270deg, #45b9f2 50%, #ddd 50%, #ddd); }
-
-.progress--bar.progress--3.5:after {
-  width: 3.5%; }
-
-.progress--circle.progress--3.5:after {
-  background-image: -webkit-linear-gradient(108deg, #022962 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #45b9f2 50%, #ddd 50%, #ddd);
-  background-image: -o-linear-gradient(108deg, #022962 50%, transparent 50%, transparent), -o-linear-gradient(right, #45b9f2 50%, #ddd 50%, #ddd);
-  background-image: linear-gradient(-18deg, #022962 50%, transparent 50%, transparent), linear-gradient(270deg, #45b9f2 50%, #ddd 50%, #ddd); }
-
-.progress--bar.progress--4:after {
-  width: 4%; }
-
-.progress--circle.progress--4:after {
-  background-image: -webkit-linear-gradient(72deg, #022962 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #45b9f2 50%, #ddd 50%, #ddd);
-  background-image: -o-linear-gradient(72deg, #022962 50%, transparent 50%, transparent), -o-linear-gradient(right, #45b9f2 50%, #ddd 50%, #ddd);
-  background-image: linear-gradient(18deg, #022962 50%, transparent 50%, transparent), linear-gradient(270deg, #45b9f2 50%, #ddd 50%, #ddd); }
-
-.progress--bar.progress--4.5:after {
-  width: 4.5%; }
-
-.progress--circle.progress--4.5:after {
-  background-image: -webkit-linear-gradient(36deg, #022962 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #45b9f2 50%, #ddd 50%, #ddd);
-  background-image: -o-linear-gradient(36deg, #022962 50%, transparent 50%, transparent), -o-linear-gradient(right, #45b9f2 50%, #ddd 50%, #ddd);
-  background-image: linear-gradient(54deg, #022962 50%, transparent 50%, transparent), linear-gradient(270deg, #45b9f2 50%, #ddd 50%, #ddd); }
-
-.progress--bar.progress--5:after {
-  width: 5%; }
-
-.progress--circle.progress--5:after {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #022962), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #45b9f2), color-stop(50%, #ddd), to(#ddd));
-  background-image: -webkit-linear-gradient(left, #022962 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #45b9f2 50%, #ddd 50%, #ddd);
-  background-image: -o-linear-gradient(left, #022962 50%, transparent 50%, transparent), -o-linear-gradient(right, #45b9f2 50%, #ddd 50%, #ddd);
-  background-image: linear-gradient(90deg, #022962 50%, transparent 50%, transparent), linear-gradient(270deg, #45b9f2 50%, #ddd 50%, #ddd); }
-
 .progress-review-content.progress-review-content2 .rating-title {
   width: 50%; }
 
@@ -630,22 +473,22 @@ a {
   background: #45b9f2;
   cursor: pointer; }
 
-.progress-bar {
+.progress-bar1 {
   position: relative;
   height: 100px;
   width: 100px;
   background: transparent; }
 
-.progress-bar .background {
+.progress-bar1 .background {
   background: #022962; }
 
-.progress-bar div {
+.progress-bar1 div {
   position: absolute;
   height: 100px;
   width: 100px;
   border-radius: 50%; }
 
-.progress-bar div span {
+.progress-bar1 div span {
   position: absolute;
   font-family: Arial;
   font-size: 25px;
@@ -659,21 +502,39 @@ a {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background-color: white; }
+  background-color: white;
+  font-size: 0; }
 
-.progress-bar .background {
+.progress-bar1 .ratings-count {
+  position: absolute;
+  font-family: "alibaba-sans", sans-serif;
+  font-size: 25px;
+  line-height: 85px;
+  height: 85px;
+  width: 86px;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: white;
+  font-weight: 600; }
+
+.progress-bar1 .background {
   background-color: #b3cef6; }
 
-.progress-bar .rotate {
+.progress-bar1 .rotate {
   clip: rect(0 50px 100px 0);
   background-color: #45b9f2; }
 
-.progress-bar .left {
+.progress-bar1 .left {
   clip: rect(0 50px 100px 0);
   opacity: 1;
   background-color: #45b9f2; }
 
-.progress-bar .right {
+.progress-bar1 .right {
   clip: rect(0 50px 100px 0);
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);

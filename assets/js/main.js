@@ -24,7 +24,7 @@
         });
 
         // prograss bar
-        $(".progress-bar").loading();
+        $(".progress-bar1").loading();
 
 
         // var options = {
